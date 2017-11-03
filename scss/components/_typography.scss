@@ -1,0 +1,32 @@
+.container {
+  font-family: $font-family--primary;
+  font-size: $base__font-size;
+  line-height: $base__line;
+}
+.link {
+  color: $color-secondary;
+  font-weight: bold;
+}
+.blockquote {
+  @extend %blkquote;
+  width: 80%;
+  margin: 20px auto 40px auto;
+  font-size: em(24px);
+  line-height: 1.2;
+  border-radius: 6px;
+  @media(min-width: 1000px) {
+    width: 85%;
+  }
+
+}
+.headline--primary {
+  @extend %hdln-prim;
+  @media (min-width: 1000px) {
+    padding-left: em(30px);
+  }
+}
+.headline--secondary {
+  @extend %hdln-sec;
+  padding-top: em(30px);
+  padding-bottom: em(10px);
+}

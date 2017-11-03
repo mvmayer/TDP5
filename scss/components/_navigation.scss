@@ -1,0 +1,17 @@
+.nav__item {
+  @extend %centered;
+  list-style-type: none;
+    padding: em(12px);
+  font-size: em(18px);
+  border: solid 1px transparent;
+  border-radius: $br-default;
+  &:hover {
+    background-color: $fountain-blue;
+  }
+  & a {
+    color: $grey;
+    &:hover {
+      color: $white;
+    }
+  }
+}

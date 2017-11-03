@@ -1,3 +1,60 @@
+.nav__item {
+  text-align: center;
+  margin: 0 auto; }
+
+.form, .container {
+  width: 90%;
+  margin: 0 auto; }
+
+.grid__row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: solid 1px transparent;
+  border-radius: 0.4em;
+  padding: 12px;
+  margin: 10px 0; }
+
+.headline--primary {
+  font-size: em(42px);
+  line-height: 1.0952380952;
+  padding-left: 20px;
+  color: #62dbcd; }
+
+.headline--secondary {
+  font-size: em(24px);
+  font-weight: normal;
+  margin: 0 auto; }
+
+.blockquote {
+  padding: 0 5px 0 25px;
+  border-left: solid 9px #62dbcd;
+  font-style: italic; }
+
+.img--logo, .img--avatar {
+  display: block;
+  margin: 0 auto; }
+
+.theme__colors.grid__col--3, .theme__colors.grid__col--4, .theme__colors.grid__col--5, .theme__colors.grid__col--6, .theme__colors.grid__col--7, .theme__colors.grid__col--8, .theme__colors.grid__col--12 {
+  border: solid 1px transparent;
+  border-radius: 0.4em;
+  padding: 8px; }
+
+.card p,
+.card .headline--secondary {
+  width: 90%;
+  margin: auto;
+  margin-bottom: em(40px); }
+
+.theme__colors.grid__col--12, .grid__col--6 + .grid__col--6, .grid__col--4 + .grid__col--4 + .grid__col--4, .grid__col--3 + .grid__col--3 + .grid__col--3 + .grid__col--3, .theme__colors.grid__col--7, .grid__col--8 + .grid__col--4 {
+  margin-bottom: 40px; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -39,7 +96,7 @@ section {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 5px 5px 30px 5px; }
 
 /* Grouping content
    ========================================================================== */
@@ -91,7 +148,8 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+  text-decoration: none; }
 
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
@@ -389,7 +447,237 @@ template {
 [hidden] {
   display: none; }
 
+blockquote {
+  margin: 15px; }
+
 * {
   box-sizing: border-box; }
+
+ul {
+  margin-top: 2.8125em;
+  margin-bottom: 3.125em;
+  padding: 0; }
+  @media (min-width: 1000px) {
+    ul {
+      display: flex;
+      width: 70%;
+      margin-left: 6.25em; } }
+
+p {
+  margin: 0 auto;
+  width: 95%; }
+  @media (min-width: 1000px) {
+    p {
+      font-size: 1.0625em; } }
+
+.container {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif, Arial;
+  font-size: 16px;
+  line-height: 28px; }
+
+.link {
+  color: #68e8f9;
+  font-weight: bold; }
+
+.blockquote {
+  width: 80%;
+  margin: 20px auto 40px auto;
+  font-size: 1.5em;
+  line-height: 1.2;
+  border-radius: 6px; }
+  @media (min-width: 1000px) {
+    .blockquote {
+      width: 85%; } }
+
+@media (min-width: 1000px) {
+  .headline--primary {
+    padding-left: 1.875em; } }
+
+.headline--secondary {
+  padding-top: 1.875em;
+  padding-bottom: 0.625em; }
+
+.nav__item {
+  list-style-type: none;
+  padding: 0.75em;
+  font-size: 1.125em;
+  border: solid 1px transparent;
+  border-radius: 0.4em; }
+  .nav__item:hover {
+    background-color: #62dbcd; }
+  .nav__item a {
+    color: #797e83; }
+    .nav__item a:hover {
+      color: #fff; }
+
+@media (min-width: 1000px) {
+  .form .btn--default {
+    width: 100%;
+    margin: 1.25em auto; } }
+
+.form__label--hidden {
+  display: none; }
+
+.form__input {
+  width: 95%;
+  padding: 10px;
+  margin: 1.25em 10px 0 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid #62dbcd 7px; }
+
+.btn--default {
+  margin-top: 30px; }
+  @media (min-width: 1000px) {
+    .btn--default {
+      display: inline-block;
+      width: 15%;
+      margin: 1.5625em; } }
+
+@media (min-width: 1000px) {
+  .btn--success {
+    display: inline-block;
+    width: 15%;
+    margin: 1.5625em; } }
+
+@media (min-width: 1000px) {
+  .btn--error {
+    display: inline-block;
+    width: 15%;
+    margin: 1.5625em; } }
+
+@media (min-width: 1000px) {
+  .btn--warning {
+    display: inline-block;
+    width: 15%;
+    margin: 1.5625em; } }
+
+.btn--info {
+  margin-bottom: 30px; }
+  @media (min-width: 1000px) {
+    .btn--info {
+      display: inline-block;
+      width: 15%;
+      margin: 1.5625em; } }
+
+.btn--default {
+  background-color: #68e8f9; }
+
+.btn--success {
+  background-color: #5ece7f; }
+
+.btn--error {
+  background-color: #e87f83; }
+
+.btn--warning {
+  background-color: #fc923c; }
+
+.btn--info {
+  background-color: #9675d8; }
+
+@media (min-width: 1000px) {
+  .container {
+    width: 80%; } }
+
+.grid__row {
+  margin: 0 auto; }
+
+@media (min-width: 769px) {
+  .grid__col--2 {
+    width: 15%; }
+
+  .grid__col--3 {
+    width: 23.5%; }
+
+  .grid__col--4 {
+    width: 32%; }
+
+  .grid__col--5 {
+    width: 40.5%; }
+
+  .grid__col--6 {
+    width: 49%; }
+
+  .grid__col--7 {
+    width: 57.5%; }
+
+  .grid__col--8 {
+    width: 66%; }
+
+  .grid__col--9 {
+    width: 74.5%; }
+
+  .grid__col--10 {
+    width: 83%; }
+
+  .grid__col--11 {
+    width: 91.5%; }
+
+  .grid__col--12 {
+    width: 100%; } }
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^="grid__col--"] {
+    margin-top: 0.375em;
+    margin-bottom: 0.375em; } }
+@media (min-width: 769px) {
+  [class^="grid__col--"] {
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    [class^="grid__col--"] + [class^="grid__col--"] {
+      margin-left: 2%; } }
+
+.theme__colors.grid__col--3 {
+  background-color: #d8a0e5; }
+
+.theme__colors.grid__col--4 {
+  background-color: #68e8f9; }
+
+.theme__colors.grid__col--5 {
+  background-color: #85da9e; }
+
+.theme__colors.grid__col--6 {
+  background-color: #3c91b2; }
+
+.theme__colors.grid__col--7 {
+  background-color: #e87f83; }
+
+.theme__colors.grid__col--8 {
+  background-color: #fc923c; }
+
+.theme__colors.grid__col--12 {
+  background-color: #62dbcd; }
+
+@media (min-width: 1000px) {
+  .centered {
+    float: none;
+    margin: 0 auto; } }
+
+@media (min-width: 100px) {
+  .card p,
+  .card .headline--secondary {
+    width: 95%;
+    margin: auto; } }
+
+@media (min-width: 1000px) {
+  .card p {
+    margin: 3.125em auto; } }
+
+.theme__colors.grid__col--12 {
+  margin-top: 1.25em; }
+
+.img--logo {
+  padding-top: 2.5em;
+  padding-bottom: 1.25em; }
+
+.img--frame {
+  max-width: 100%;
+  height: auto;
+  padding: 0.75em;
+  border: solid #e3e4e5 2px;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em; }
 
 /*# sourceMappingURL=styles.css.map */

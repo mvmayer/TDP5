@@ -1,3 +1,22 @@
 * {
   box-sizing: border-box;
 }
+
+ul {
+  margin-top: em(45px);
+  margin-bottom: em(50px);
+  padding : 0;
+  @media (min-width: 1000px) {
+    display: flex;
+    width: 70%;
+    margin-left: em(100px);
+  }
+}
+
+p {
+  margin: 0 auto;
+  width: 95%;
+  @media (min-width: 1000px) {
+    font-size: em(17px);
+  }
+}

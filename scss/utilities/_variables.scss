@@ -2,24 +2,67 @@
 
 $font-family--primary : 'Helvetica Neue', 'Helvetica', sans-serif, Arial;
 
-// Font Weight
+// Font styling
 
 $font-weight--bold    : bold;
+$font-style--italic   : italic;
+
 
 // Colors
 
-$white          : #fff;
-$black          : #0b0b0b;
-$grey           : #797e83;
+$white           : #fff;
+$black           : #0b0b0b;
+$grey            : #797e83;
 
-$fountain-blue  : #52bab3;
-$emerald        : #5ece7f;
-$sunglo         : #e67478;
-$coral          : #ff784f;
-$purple-majesty : #9279c3;
-$scooter        : #39add1;
+$fountain-blue   : #62dbcd;
+$emerald         : #5ece7f;
+$sunglo          : #e87f83;
+$coral           : #fc923c;
+$purple-majesty  : #9675d8;
+$scooter         : #68e8f9;
+$bluesteel       : #3c91b2;
+$hotpink         : #d8a0e5;
+$emerald-light   : lighten($emerald, 10%);
+
+// Color Usage
+
+$color-primary   : $fountain-blue;
+$color-secondary : $scooter;
+
+// UI colors
+
+$ui-colors: (
+  default  : $scooter,
+  success  : $emerald,
+  error    : $sunglo,
+  warning  : $coral,
+  info     : $purple-majesty
+);
+
+// Grid Colors
+
+$grid-colors: (
+  col--3 : $hotpink,
+  col--4 : $scooter,
+  col--5 : $emerald-light,
+  col--6 : $bluesteel,
+  col--7 : $sunglo,
+  col--8 : $coral,
+  col--12: $fountain-blue
+);
 
 // Text
 
-$base__font-size : em(16px);
-$base__line      : em(24px);
+$base__font-size : 16px;
+$base__line      : 28px;
+
+// Grid
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1400px;
+
+// Border
+
+$br-default: .4em;

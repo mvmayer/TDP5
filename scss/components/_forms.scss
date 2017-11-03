@@ -1,0 +1,21 @@
+.form {
+  @extend %width90;
+  .btn--default {
+    @media (min-width: 1000px) {
+      width: 100%;
+      margin: em(20px) auto;
+    }
+}
+}
+.form__label--hidden {
+  display: none;
+}
+.form__input {
+  width: 95%;
+  padding: 10px;
+  margin: em(20px) 10px 0 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid $fountain-blue 7px;
+}

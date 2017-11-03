@@ -46,7 +46,7 @@ section {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 5px 5px 30px 5px;
 }
 
 /* Grouping content
@@ -103,6 +103,7 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration: none;
 }
 
 /**
@@ -444,4 +445,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+blockquote {
+  margin: 15px;
 }

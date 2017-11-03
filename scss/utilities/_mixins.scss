@@ -1,0 +1,15 @@
+
+// Adjacent Siblings Margins
+
+@mixin doubly($margin: 1em) {
+  & + & {
+    margin-left: $margin;
+    @content;
+  }
+}
+
+@mixin btn-media {
+  display: inline-block;
+  width: 15%;
+  margin: em(25px);
+}

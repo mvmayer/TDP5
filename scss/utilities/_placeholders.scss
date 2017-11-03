@@ -1,0 +1,74 @@
+%centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+%width90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%btn {
+  width: 100%;
+  color: $white;
+  font-weight: $font-weight--bold;
+  text-transform: uppercase;
+  border: solid 1px transparent;
+  border-radius: $br-default;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+%btn-media {
+  display: inline-block;
+  width: 15%;
+  margin: em(25px);
+}
+
+%hdln-prim {
+  font-size: em(42px);
+  line-height: (46px/42px);
+  padding-left: 20px;
+  color: $color-primary;
+}
+
+%hdln-sec {
+  font-size: em(24px);
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+%blkquote {
+  padding: 0 5px 0 25px;
+  border-left: solid 9px $fountain-blue;
+  font-style: $font-style--italic;
+}
+
+%img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+%col {
+  border: solid 1px transparent;
+  border-radius: $br-default;
+  padding: 8px;
+}
+
+%card {
+  width: 90%;
+  margin: auto;
+  margin-bottom: em(40px);
+}
+
+%margbot40 {
+  margin-bottom: 40px;
+}
