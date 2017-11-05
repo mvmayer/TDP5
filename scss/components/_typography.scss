@@ -14,14 +14,14 @@
   font-size: em(24px);
   line-height: 1.2;
   border-radius: 6px;
-  @media(min-width: 1000px) {
+  @include mq(med) {
     width: 85%;
   }
 
 }
 .headline--primary {
   @extend %hdln-prim;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     padding-left: em(30px);
   }
 }

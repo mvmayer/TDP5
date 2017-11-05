@@ -1,32 +1,32 @@
 .btn--default {
   @extend %btn;
   margin-top: 30px;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     @include btn-media;
   }
 }
 .btn--success {
   @extend %btn;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     @include btn-media;
   }
 }
 .btn--error {
   @extend %btn;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     @include btn-media;
   }
 }
 .btn--warning {
   @extend %btn;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     @include btn-media;
   }
 }
 .btn--info {
   @extend %btn;
   margin-bottom: 30px;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     @include btn-media;
   }
 }

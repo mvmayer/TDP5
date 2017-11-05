@@ -8,8 +8,49 @@
   }
 }
 
+// Media Queries
+
+@mixin mq($break) {
+  @if $break == 'sm' {
+    @media (min-width: $break-s) {
+      @content;
+    }
+  }
+  @else if $break == 'med' {
+    @media (min-width: $break-m) {
+      @content;
+    }
+  }
+}
+
 @mixin btn-media {
   display: inline-block;
   width: 15%;
   margin: em(25px);
+}
+
+// BEM Selectors
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Flexbox Mixin
+
+@function px-to-pc ($target, $context: $max-width) {
+   @return ($target / $context) * 100%;
+}
+
+@function per-line($items) {
+   $g-pct: px-to-pc($gutter) * 2;
+   $g-total: $items * $g-pct;
+   @return (100% / $items) - $g-total;
 }

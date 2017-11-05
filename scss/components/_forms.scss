@@ -5,17 +5,17 @@
       width: 100%;
       margin: em(20px) auto;
     }
-}
+  }
+  @include e(input) {
+    width: 95%;
+    padding: 10px;
+    margin: em(20px) 10px 0 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid $fountain-blue 7px;
+  }
 }
 .form__label--hidden {
   display: none;
-}
-.form__input {
-  width: 95%;
-  padding: 10px;
-  margin: em(20px) 10px 0 10px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid $fountain-blue 7px;
 }

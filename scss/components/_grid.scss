@@ -1,6 +1,6 @@
 .container {
   @extend %width90;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     width: 80%;
   }
 }
@@ -45,7 +45,7 @@
   }
 }
 .centered {
-  @media (min-width: 1000px) {
+  @include mq(med) {
     float: none;
     margin: 0 auto;
   }
@@ -61,7 +61,7 @@
 }
 
 .card p {
-  @media (min-width: 1000px) {
+  @include mq(med) {
     margin: em(50px) auto;
   }
 }

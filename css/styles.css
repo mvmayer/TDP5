@@ -514,10 +514,6 @@ p {
   .form .btn--default {
     width: 100%;
     margin: 1.25em auto; } }
-
-.form__label--hidden {
-  display: none; }
-
 .form__input {
   width: 95%;
   padding: 10px;
@@ -526,6 +522,9 @@ p {
   border-right: none;
   border-left: none;
   border-bottom: solid #62dbcd 7px; }
+
+.form__label--hidden {
+  display: none; }
 
 .btn--default {
   margin-top: 30px; }

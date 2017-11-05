@@ -6,7 +6,7 @@ ul {
   margin-top: em(45px);
   margin-bottom: em(50px);
   padding : 0;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     display: flex;
     width: 70%;
     margin-left: em(100px);
@@ -16,7 +16,7 @@ ul {
 p {
   margin: 0 auto;
   width: 95%;
-  @media (min-width: 1000px) {
+  @include mq(med) {
     font-size: em(17px);
   }
 }
